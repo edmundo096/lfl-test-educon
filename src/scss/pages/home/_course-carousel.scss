@@ -1,9 +1,36 @@
 
-$faint-color: #989898;
-
 .course-carousel {
 
+  // Text, color and layout
+  // Carousel
+  .course-carousel-title {
+    border-left: $primary-color solid 3px;
+    padding-left: 8px;
+    font-weight: 600;
+  }
+  .course-carousel-subtitle {
+    color: $faint-color;
+    padding-left: 11px;
+    font-size: 0.8rem;
+  }
+  .course-carousel-back,
+  .course-carousel-next {
+    border-radius: 50%;
+    font-size: 11.2px;
+  }
+  // Adjust so button is 28x28px (the height was the base)
+  .course-carousel-back {
+    padding-left: 10px;
+    padding-right: 11px;
+  }
+  .course-carousel-next {
+    padding-left: 11px;
+    padding-right: 10px;
+  }
+
+
   // Text and color
+  // Cards
   .card-title {
     font-weight: 600;
   }
