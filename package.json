@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Page design creation test from LFL",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp default"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/edmundo096/lfl-test-educon/issues"
   },
-  "homepage": "https://github.com/edmundo096/lfl-test-educon#readme"
+  "homepage": "https://github.com/edmundo096/lfl-test-educon#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {}
 }

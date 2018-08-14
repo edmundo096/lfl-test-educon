@@ -5,6 +5,10 @@ out
 gen
 
 
+# Build dist
+dist
+
+
 ### Node template
 # Logs
 logs
