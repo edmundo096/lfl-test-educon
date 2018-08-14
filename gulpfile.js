@@ -7,8 +7,7 @@ const sass = require('gulp-sass');
 
 const distPath = './dist/';
 const srcPath = './src/';
-const sassSrcPath = path.join(srcPath, 'scss/**/*.scss');
-
+const sassSrcPath = path.join(srcPath, 'scss/**/*.{scss,sass}');
 
 
 // Clean
@@ -35,17 +34,24 @@ gulp.task('sass', () => {
     .pipe(gulp.dest(`${distPath}/css`));
 });
 
-gulp.task('sass:watch', () => {
-  gulp.watch(sassSrcPath, ['sass']);
+
+// Compound tasks --------------------------------
+
+gulp.task('watch', () => {
+  // Styles
+  gulp.watch([sassSrcPath], ['sass']);
+
+  // Copy
+  gulp.watch([
+    path.join(srcPath, '**/*'),
+    '!' + path.join(srcPath, '**/scss/**')
+  ], ['copy']);
 });
-
-
-// Compound tasks
 
 // Build
 gulp.task('build', ['copy', 'sass']);
 
-// Default
+// Default. Cleans "/dist" and builds
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
