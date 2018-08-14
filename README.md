@@ -3,6 +3,8 @@
 
 Mainly created as a refresher of Bootstrap v4 and old school HTML with Sass and gulp.
 
+**DEMO** on surge: http://lfl-test-educon.surge.sh/ 
+
 ## Install and run
 
 1. Clone and use `npm install`.
