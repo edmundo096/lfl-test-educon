@@ -2,6 +2,7 @@
 ### Ideas not implemented
 
 - Include jQuery, Bootstrap Sass and JS files from *node_modules* and not from CDN.
+  - This would permit use and modify Sass variables and mixings making a lot easier to customize. 
 - Support processing of JS files, even with support of ES6+ with babel.
 - Browser reload plugin/task when source code files changes.
 - Process and/or minify source files.

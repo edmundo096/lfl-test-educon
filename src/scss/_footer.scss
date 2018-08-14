@@ -1,4 +1,34 @@
 
+$bs-min-small: 540px;
+$bs-min-medium: 720px;
+
+$footer-height-xsmall: 360px;
+$footer-height-small: 285px;
+$footer-height-medium: 230px;
+
+// Sticky bottom placement and page Layout
+body {
+  padding-bottom: $footer-height-xsmall;
+  position: relative;
+  height: 100%;
+}
+footer {
+  height: $footer-height-xsmall;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+// TODO: Use a mixing with a loop
+@media (min-width: $bs-min-small) {
+  body { padding-bottom: $footer-height-small; }
+  footer { height: $footer-height-small; }
+}
+@media (min-width: $bs-min-medium) {
+  body { padding-bottom: $footer-height-medium; }
+  footer { height: $footer-height-medium; }
+}
+
+
 // Layout
 footer {
   p {
