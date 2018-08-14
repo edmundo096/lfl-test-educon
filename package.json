@@ -1,0 +1,18 @@
+{
+  "name": "lfl-test-educon",
+  "version": "0.1.0",
+  "description": "Page design creation test from LFL",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edmundo096/lfl-test-educon.git"
+  },
+  "author": "Edmundo Elizondo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/edmundo096/lfl-test-educon/issues"
+  },
+  "homepage": "https://github.com/edmundo096/lfl-test-educon#readme"
+}
