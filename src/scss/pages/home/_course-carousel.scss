@@ -1,7 +1,22 @@
 
-// Positioning and layout
+$faint-color: #989898;
 
 .course-carousel {
+
+  // Text and color
+  .card-title {
+    font-weight: 600;
+  }
+  .card-subtitle {
+    color: $faint-color;
+  }
+  .card-text {
+    font-size: 0.8rem;
+    color: $faint-color;
+  }
+  button {
+    font-size: 0.7rem;
+  }
 
 }
 
