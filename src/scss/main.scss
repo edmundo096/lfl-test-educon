@@ -1,3 +1,7 @@
-p {
-  color: red;
-}
+
+// Layout
+@import "font";
+@import "footer";
+
+// Pages
+@import "pages/index";

@@ -1,0 +1,34 @@
+
+// Layout
+footer {
+  p {
+    margin-bottom: .25rem;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: unset;
+  }
+}
+
+// Color and font
+footer {
+  font-size: 0.7rem;
+  background-color: #1f232f;
+
+  .footer-header {
+    font-size: 0.7rem;
+    color: #dce0e4;
+  }
+  :not(.footer-header) {
+    color: #7c8186;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #dce0e4;
+  }
+
+  .footer-copyright {
+    background-color: #1b1e27;
+  }
+}

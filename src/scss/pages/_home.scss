@@ -1,0 +1,49 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+
+// Jumbotron
+
+
+// Positioning and layout
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-image: url("./../assets/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+  .jumbotron .jumbotron-content {
+    max-width: 450px;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+// Headings and texts
+
+.jumbotron-heading {
+  font-weight: 700;
+
+  @at-root h6#{&} {
+    font-weight: 600;
+  }
+  @at-root h1#{&} {
+    font-size: 3.3rem;
+  }
+}
+.jumbotron-text {
+  color: darken(white, 30%);
+  font-size: 0.8rem;
+}
+
